@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
 * {
@@ -50,9 +51,7 @@
   font-weight: bold;
   letter-spacing: 1px;
   text-transform: capitalize;
-  border-left: 4px solid transparent;
   padding-bottom: 2px;
-  border: solid 1px rgb(245, 179, 233);
   border-radius: 60px;
   margin-left: 10px;
   font-weight: bold;
@@ -122,8 +121,6 @@
 border-top: 2px solid #ddd;
   
 }
-
-
 
 .sidebar-button {
   display: flex;
@@ -395,9 +392,9 @@ border-top: 2px solid #ddd;
 }
 
 .logo-image {
-  width: 70px; /* Adjust the size as needed */
-  height: 80px; /* Adjust the size as needed */
-  margin-right: 10px; /* Space between the image and the text */
+  height: 60px;
+  width: 180px; /* Or auto */
+  object-fit:scale-down;
 }
 
 img {
@@ -412,4 +409,135 @@ img {
   object-fit: cover; /* or `contain` depending on how you want it displayed */
   border-radius: 8px; /* Optional: Add rounded corners for better UI */
 }
+/* Responsive adjustments */
+@media screen {
+  (max-width: 1028px) {
+    .sidebar {
+      width: 80px; /* Smaller sidebar on mobile */
+    }
+    
+    .sidebar.active {
+      width: 60px; /* Keep it small when active */
+    }
+    
+    .home-section {
+      width: calc(100% - 60px); /* Adjust home section width */
+      left: 60px; /* Adjust left position */
+    }
+    
+    .sidebar-button i {
+      font-size: 24px; /* Smaller icon size on mobile */
+    }
+    
+    .search-box {
+      width: 180px; /* Adjust search box width */
+    }
+    
+    .nav-icons {
+      gap: 20px; /* Reduce gap between icons */
+    }
+    
+    .profile-details {
+      min-width: 150px; /* Adjust profile details width */
+    }
+    
+    .logo-image {
+      max-width: 80px; /* Adjust logo size for mobile */
+    }
+  }
+  
+}
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 60px; /* Smaller sidebar on smaller screens */
+  }
+  
+  .sidebar.active {
+    width: 50px; /* Keep it very small when active */
+  }
+  
+  .home-section {
+    width: calc(100% - 50px); /* Adjust home section width */
+    left: 50px; /* Adjust left position */
+  }
+  
+  .sidebar-button i {
+    font-size: 20px; /* Smaller icon size on smaller screens */
+  }
+  
+  .search-box {
+    width: 150px; /* Adjust search box width */
+  }
+  
+  .nav-icons {
+    gap: 15px; /* Reduce gap between icons */
+  }
+  
+  .profile-details {
+    min-width: 120px; /* Adjust profile details width */
+  }
+  
+}
 
+@media screen and (max-width: 480px) {
+  .sidebar {
+    width: 50px; /* Very small sidebar on very small screens */
+  }
+  
+  .sidebar.active {
+    width: 40px; /* Keep it very small when active */
+  }
+  
+  .home-section {
+    width: calc(100% - 40px); /* Adjust home section width */
+    left: 40px; /* Adjust left position */
+  }
+  
+  .sidebar-button i {
+    font-size: 18px; /* Smaller icon size on very small screens */
+  }
+  
+  .search-box {
+    width: 120px; /* Adjust search box width */
+  }
+  
+  .nav-icons {
+    gap: 10px; /* Reduce gap between icons */
+  }
+  
+  .profile-details {
+    min-width: 100px; /* Adjust profile details width */
+  }
+  
+}
+@media screen and (max-width: 1028px) {
+  .sidebar {
+    width: 80px; /* Smaller sidebar on mobile */
+  }
+  
+  .sidebar.active {
+    width: 60px; /* Keep it small when active */
+  }
+  
+  .home-section {
+    width: calc(100% - 60px); /* Adjust home section width */
+    left: 60px; /* Adjust left position */
+  }
+  
+  .sidebar-button i {
+    font-size: 24px; /* Smaller icon size on mobile */
+  }
+  
+  .search-box {
+    width: 160px; /* Adjust search box width */
+  }
+  
+  .nav-icons {
+    gap: 22px; /* Reduce gap between icons */
+  }
+  
+  .profile-details {
+    min-width: 150px; /* Adjust profile details width */
+  }
+  
+}
